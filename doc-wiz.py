@@ -12,6 +12,7 @@ SEARCH_ENGINE_ID = os.getenv("search_engine_id")
 
 # Set up Discord bot client
 intents = discord.Intents.default()
+intents.message_content = True
 client = discord.Client(intents=intents)
 
 # Function to search using Google Custom Search API
@@ -33,6 +34,8 @@ def search_documentation(query):
     else:
         return "Error retrieving results.", None
     
+print(search_documentation("python list comprehension"))
+    
 @client.event
 async def on_ready():
     print(f"{client.user} has connected to Discord!")
@@ -45,6 +48,7 @@ async def on_message(message):
     
     # Check if message starts with the trigger
     if message.content.startswith("!docs"):
+        await message.channel.send("Command received!")
         query = message.content[6:]  # Get the search term after '!docs '
         title, link = search_documentation(query)
         
