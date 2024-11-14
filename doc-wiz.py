@@ -34,8 +34,6 @@ def search_documentation(query):
     else:
         return "Error retrieving results.", None
     
-print(search_documentation("python list comprehension"))
-    
 @client.event
 async def on_ready():
     print(f"{client.user} has connected to Discord!")
