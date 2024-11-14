@@ -9,6 +9,7 @@ load_dotenv()
 DISCORD_TOKEN = os.getenv("discord_token")
 GOOGLE_API_KEY = os.getenv("google_api_key")
 SEARCH_ENGINE_ID = os.getenv("search_engine_id")
+CHANNEL_ID = os.getenv("channel_id")
 
 # Set up Discord bot client
 intents = discord.Intents.default()
@@ -46,9 +47,12 @@ async def on_message(message):
     if message.author == client.user:
         return
     
+    # Check if message is in the specified channel
+    if message.channel.id != CHANNEL_ID:
+        return  # Ignore messages from other channels
+    
     # Check if message starts with the trigger
     if message.content.startswith("!docs"):
-        await message.channel.send("Command received!")
         query = message.content[6:]  # Get the search term after '!docs '
         title, link = search_documentation(query)
         
