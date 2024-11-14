@@ -33,11 +33,13 @@ def search_documentation(query):
             return "No results found.", None
     else:
         return "Error retrieving results.", None
-    
+
+# Message when the bot connects to Discord    
 @client.event
 async def on_ready():
     print(f"{client.user} has connected to Discord!")
 
+# Handling a message
 @client.event
 async def on_message(message):
     # Prevent bot from responding to its own messages
