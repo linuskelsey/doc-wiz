@@ -50,3 +50,5 @@ async def on_message(message):
             await message.channel.send(f"**{title}**\n{link}")
         else:
             await message.channel.send(title)
+
+client.run(DISCORD_TOKEN)
