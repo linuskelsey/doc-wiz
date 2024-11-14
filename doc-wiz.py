@@ -3,10 +3,12 @@ import discord
 import requests
 from dotenv import load_dotenv
 
+load_dotenv()
+
 # Replace with your credentials
-DISCORD_TOKEN = os.getenv(DISCORD_TOKEN)
-GOOGLE_API_KEY = os.getenv(GOOGLE_API_KEY)
-SEARCH_ENGINE_ID = os.getenv(SEARCH_ENGINE_ID)
+DISCORD_TOKEN = os.getenv("discord_token")
+GOOGLE_API_KEY = os.getenv("google_api_key")
+SEARCH_ENGINE_ID = os.getenv("search_engine_id")
 
 # Set up Discord bot client
 intents = discord.Intents.default()
