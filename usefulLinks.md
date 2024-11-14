@@ -1,0 +1,3 @@
+[Google Cloud Platform]((https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=emea-gb-all-en-bkws-all-all-trial-e-gcp-1707574&utm_content=text-ad-none-any-DEV_c-CRE_500227884420-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+-+GCP+-+General+-+v1-KWID_43700060384861702-kwd-26415313501-userloc_9046004&utm_term=KW_google%20cloud%20platform-NET_g-PLAC_&&gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagKtqeo5IAQhJi4t1OecAAQYlxT2vN2LjJ5IhbfsLrQ5yIKiTQnh63xoCAzIQAvD_BwE&gclsrc=aw.ds)) (GCP): used to generate API keys and calls.
+
+[Google Custom Search](https://programmablesearchengine.google.com/controlpanel/all): used to produce customised search engines, reducing time taken to search the web.
